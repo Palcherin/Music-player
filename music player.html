@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="music player.css">
+    <script src="music player.js"></script>
+</head>
+<body>
+    <div class="player">
+        <div class="container">
+            <div class="details"> 
+                <div class="playing">PLAYIN X OF Y</div>
+                <div class="track-art "> <img src="Images/music icon.png" alt=""> </div>
+                <div class="track-name">Track name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+            <img src="" alt="">
+            
+            <div class="slider-container">
+                <div class="current-time">00:00</div>
+               <!-- <audio  controls>
+                <source src="Images/C:\Users\jj\Desktop\Imagess\Images\Alikiba_-_Utu_{Track_No.14}(128k).mp3 type="audio">
+               </audio> -->
+                <input type="range" min="1" max="100" class="seek-slide" onchange="seekTo()">
+                <div class="duration">00:00</div>
+            </div>
+            <div class="slider-container">
+                <i class="fa fa-volume"></i>
+                <input type="range" min="1" max="100" class="volume-slider" value="90" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>.   
+            </div>
+            <div class="row">
+                <div class="button">
+                    <div class="random-track" onclick="RandomTrack()">
+                        <img src="images/random play icon.png" width="20px" height="20px">
+                    </div>
+                    <div class="prev-Track" onclick="RandomTrack()">
+                        <img src="images/prev icon.png" width="20px" height="20px">
+                    </div>
+                    <div class="play-track" onclick="RandomTrack()">
+                        <img src="images/play icon.png" width="20px" height="20px">
+                    </div>
+                    <div class="next-track" onclick="RandomTrack()">
+                        <img src="images/next icon.png" width="20px" height="20px">
+                    </div>
+                    
+
+
+            </div>
+          
+                <div class="wave">
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                    <span class="stroke"></span>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+    
+</body>
+</html>
