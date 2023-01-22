@@ -1,2 +1,2 @@
 # Music-player
-music player using html, css and JS
+I created a music player usin HTML, CSS and Javascript
